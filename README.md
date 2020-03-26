@@ -3,6 +3,10 @@ I recently was affected by [this problem](https://www.change.org/p/apple-fix-all
 
 **Important Note:** While my primary desktop/work machine has been macOS because that's what my job provided, I was already very familiar with Linux when working via CLI as working with Linux servers is part of my job. This made the transition extremely easy for me (and even preferable), but others who are not in the same situation will likely have a much steeper learning curve. This document is really meant to track the resources I used in order to convert my environment rather than be a step-by-step tutorial on how to get everything working.
 
+## Screenshots
+![Screenshot 1](https://i.imgur.com/pWZYc0i.jpg)
+![Screenshot 2](https://i.imgur.com/LXlvvyr.png)
+
 ## Prerequisites
 I initially started on Ubuntu 18.04, but then re-installed and redid everything on Ubuntu 19.10 because I didn't have badge counters working in my dock. This was eventually resolved (still not 100% sure what the issue was), but you can track my troubleshooting [here](https://github.com/micheleg/dash-to-dock/issues/1110). I suspect most/all of this will also work on 18.04 LTS, but Ubuntu 20.04 LTS is being released in April 2020, so I will be waiting until that release before updating to a LTS version and updating this document.
 
