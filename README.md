@@ -36,6 +36,30 @@ git clone https://github.com/rbreaves/kinto.git
 cd kinto/  
 ./setup.py
 ```
+The options I selected are:
+```
+One time initialization tweaks are available. Would you like to view them? (Y/n) Y
+1. gnome-init
+Description: Gnome - Remove Superkey Overlay keybinding to Activities Overview
+run: gsettings set org.gnome.mutter overlay-key ''
+
+2. kde-init
+Description: KDE Plasma 5 - Removes Superkey Overlay from the Launcher Menu
+run: kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
+qdbus org.kde.KWin /KWin reconfigure
+
+Please enter your init tweak(s) (eg 1 or 1 2 3 - leave blank to skip): 1
+Dynamic shortcut tweaks
+
+1. Gnome Activities Overview
+Description: Cmd+Space activates Activities Overview
+run in gui mode: gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Ctrl>Space']"
+run in terminal mode: gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Control><Shift>Space']"
+
+Please enter your dynamic shortcut tweak(s) (eg 1 or 1 2 3 - leave blank to skip): 1
+
+```
+
 ---
 Install [Sublime Text 3](https://www.sublimetext.com/). Why? because I'm used to it. Replace with your Editor of choice.
 ```
