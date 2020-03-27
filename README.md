@@ -9,7 +9,7 @@ I recently was affected by [this problem](https://www.change.org/p/apple-fix-all
 ![Screenshot 2](https://i.imgur.com/LXlvvyr.png)
 
 ## Prerequisites
-I initially started on Ubuntu 18.04, but then re-installed and redid everything on Ubuntu 19.10 because I didn't have badge counters working in my dock. This was eventually resolved (still not 100% sure what the issue was), but you can track my troubleshooting [here](https://github.com/micheleg/dash-to-dock/issues/1110). I suspect most/all of this will also work on 18.04 LTS, but Ubuntu 20.04 LTS is being released in April 2020, so I will be waiting until that release before updating to a LTS version and updating this document.
+~~I initially started on Ubuntu 18.04, but then re-installed and redid everything on Ubuntu 19.10 because I didn't have badge counters working in my dock. This was eventually resolved (still not 100% sure what the issue was), but you can track my troubleshooting [here](https://github.com/micheleg/dash-to-dock/issues/1110). I suspect most/all of this will also work on 18.04 LTS, but Ubuntu 20.04 LTS is being released in April 2020, so I will be waiting until that release before updating to a LTS version and updating this document.~~ I ended up redo-ing all of this on Ubuntu 18.04 and it worked like a charm. I would recommend just starting from Ubuntu 18.04 LTS and then eventually moving to 20.04 once it's fully launched and all of the themes/extensions/features listed in here are supported there. I started with a minimal install, but I'm sure it would be fine to do a full install as well.
 
 **Troubleshooting Note:** On my desktop computer using an Nvidia GFX card, Ubuntu got stuck in a login screen loop where I couldn't log in. I was able to fix it by pressing  Control+Alt+F2 to bring up a terminal, and installing Ubuntu drivers.
 ```
@@ -119,7 +119,7 @@ Appearance → Shell → McOS-CTLina-Gnome-1.3.1
 Top Bar → Clock → Weekday/Date/Seconds
 Windows Titlebars → Placement → Left
 ```
-**Note:** After changing the Windows Titlebars to the Left placement, Gnome Tweaks gets all wonky. I don't know how to fix it, and I found that other people are having the same issue. I don't think it's a huge deal though.
+**Note:** After changing the Windows Titlebars to the Left placement, Gnome Tweaks gets all wonky in 19.10. It works fine in 18.04. I don't know how to fix it, and I found that other people are having the same issue. I don't think it's a huge deal though.
 
 ---
 
