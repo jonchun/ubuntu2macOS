@@ -26,13 +26,13 @@ sudo apt-get upgrade -y
 ---
 Install Git/Python3
 ```
-sudo apt-get install git python3
+sudo apt-get install -y git python3
 ```
 ---
 Install [Kinto](https://github.com/rbreaves/kinto). This converts/remaps alt&rightarrow;ctrl and alt&rightarrow;ctrl+shift in terminal applications. This lets you use hotkeys like cmd+c and cmd+v, but in Linux.
 ```
 sudo apt-get install -y xbindkeys xdotool  
-git clone [https://github.com/rbreaves/kinto.git](https://github.com/rbreaves/kinto.git)  
+git clone https://github.com/rbreaves/kinto.git
 cd kinto/  
 ./setup.py
 ```
