@@ -102,7 +102,7 @@ mkdir ~/.icons
 ```
 Download theme [McOS-CTLina-Gnome-1.3.1.tar.xz](https://www.gnome-look.org/p/1241688/) and extract it to themes directory.
 ```
-tar -xf McOS-CTLina-Gnome-1.3.1.tar.xz -C ~/.icons
+tar -xf McOS-CTLina-Gnome-1.3.1.tar.xz -C ~/.themes
 ```
 Download icon pack [papirus-icon-theme-20200301.tar.xz](https://www.gnome-look.org/s/Gnome/p/1166289/)
 ```
