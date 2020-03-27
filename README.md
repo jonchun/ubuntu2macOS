@@ -1,3 +1,4 @@
+
 ## Intro
 I recently was affected by [this problem](https://www.change.org/p/apple-fix-all-macbook-pro-2016-and-later-with-stage-light-effect-or-backlight-shutdown-flexgate) with my Macbook Pro, and Apple wanted to charge me almost $900 to fix it. Instead, I decided that I will never buy an Apple product again and just bought a new computer for the same price. However, at this point in my career, I've gotten used to development work on macOS (command key bindings, spotlight search with command+space, the themes, etc), and it would be a lot of work to retrain myself to something more Windows-like. After a few days of research/testing/tweaking things, I've finally landed in a spot that makes me feel as if I'm using macOS (with minor differences), but is running Ubuntu under the hood. 
 
@@ -183,21 +184,10 @@ I then went to [FlatIcon](https://www.flaticon.com/) and found the Ubuntu logo a
 
 ---
 
-I also installed Pantheon Files because it is much closer to macOS's Finder than the default Nautilus explorer. 
+I also installed nemo as it is much closer to mac's Finder compared to Nautilus. Unfortunately, I couldn't get Pantheon Files to work correctly (couldn't move files around) so that was a bust.
 ```
-sudo add-apt-repository ppa:elementary-os/daily
+sudo apt-get install -y nemo
 ```
-
-I was on eoan, so I had to change the repository to the bionic version. Open up `/etc/apt/sources.list.d/elementary-os-ubuntu-daily-eoan.list`
-Should look like this:
-```
-deb http://ppa.launchpad.net/elementary-os/daily/ubuntu bionic main
-# deb http://ppa.launchpad.net/elementary-os/daily/ubuntu eoan main
-# deb-src http://ppa.launchpad.net/elementary-os/daily/ubuntu eoan main
-```
-Install Pantheon Files
-```
-sudo apt-get update
-sudo apt-get install -y pantheon-files
-```
-You can launch Pantheon Files now by typing `Files` inside Activities Overview (Cmd+Space). I replaced the `Files` icon for Nautilus with the Pantheon Files one in my dock.
+You can find Nemo in the Activity Overview and searching for "nemo" or "Files". 
+If you choose to use nemo as well, the original mcOS theme I linked previously seems to break. I replaced it with 
+[McOS-CTLina-Mint.tar.gz](https://www.gnome-look.org/p/1328034/). I am still using the original McOS theme for my Shell theme though.
