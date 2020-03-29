@@ -133,7 +133,7 @@ At this point, the window decorations for McMojave were broken for me. Perhaps t
 sudo add-apt-repository ppa:krisives/kde-hello
 sudo apt install kde-hello
 ```
-These windows decorations look way better anyways. Set the Window Decorations:
+These windows decorations look way better anyways and comes with some fancy stuff like rounding out the borders. Set the Window Decorations:
 ```
 System Settings -> Application Style -> Window Decorations -> Theme
 Set hello
