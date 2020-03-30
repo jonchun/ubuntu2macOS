@@ -371,4 +371,6 @@ Assign a trigger of Ctrl+Shift+Space. (cmd+shift+space with kinto).
 ```
 This will allow you to trigger albert even from terminal windows.
 
-At this point, you should now have a workable macOS equivalent! 
+At this point, you should now have a workable macOS equivalent!
+
+3/30: There is an issue with icon themes in albert right now. Built from source to patch a workaround documented [here](https://github.com/albertlauncher/albert/issues/778)
