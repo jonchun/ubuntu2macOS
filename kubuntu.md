@@ -355,10 +355,10 @@ nohup albert &
 ```
 Configure Albert to hotkey of choice. I picked Ctrl+Space (cmd+space with kinto)
 ```
-Frontend: QML Box Model
+Frontend: Widget Box Model
 Terminal: Konsole
 Style: BoxModel
-Apply theme: Spotlight
+Theme: Spotlight
 Autostart on login: Checked
 Extensions: Applications, Calculator, Files, Hash Generator, Snippets, System, Terminal, WebSearch
 ```
