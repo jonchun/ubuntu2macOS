@@ -5,12 +5,13 @@ Additionally, I've archived the docs/notes I've taken when first starting my lin
 
 ## Screenshots
 **Before:**
-![Screenshot 1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_1.png)
+![Screenshot 20_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_1.png)
 **After:**
-![Screenshot 1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_2.png)
+![Screenshot 20_2](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_2.png)
+![Screenshot 20_3](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_3.png)
 
 **Light Theme:**
-![Screenshot 1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_18_1.png)
+![Screenshot 18_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_18_1.png)
 
 ## How to install
 Installation is simple. There are a few options to choose from, but they're self explanatory. If you don't know what icon set to pick from, I'd recomend trying out `Numix Circle` for a clean macOS like experience.
