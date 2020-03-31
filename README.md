@@ -3,16 +3,6 @@ This is a script that you can run on your Ubuntu 18.04/20.04 install and it'll g
 
 Additionally, I've archived the docs/notes I've taken when first starting my linux to mac adventure. You can find my notes for [Ubuntu](docs/ubuntu.md) and [KDE Neon](docs/kde_neon.md) in this repository.
 
-## Screenshots
-**Before:**
-![Screenshot 20_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_1.png)
-**After:**
-![Screenshot 20_2](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_2.png)
-![Screenshot 20_3](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_3.png)
-
-**Light Theme:**
-![Screenshot 18_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_18_1.png)
-
 ## How to install
 Installation is simple. There are a few options to choose from, but they're self explanatory. If you don't know what icon set to pick from, I'd recomend trying out `Numix Circle` for a clean macOS like experience.
 ```
@@ -42,6 +32,16 @@ run in terminal mode: gsettings set org.gnome.desktop.wm.keybindings panel-main-
 Please enter your dynamic shortcut tweak(s) (eg 1 or 1 2 3 - leave blank to skip): 1
 ```
 After running this script, you'll likely want to make your own tweaks and customizations. While it is on the TODO list to document how to do specific things, referencing my personal [Ubuntu notes](docs/ubuntu.md) from when I was first going through all this stuff will likely be more than enough. After all, this script basically just automates everything in that notes file.
+
+## Screenshots
+**Before:**
+![Screenshot 20_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_1.png)
+**After:**
+![Screenshot 20_2](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_2.png)
+![Screenshot 20_3](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_20_3.png)
+
+**Light Theme:**
+![Screenshot 18_1](https://raw.githubusercontent.com/Jonchun/ubuntu2macOS/master/images/ubuntu_18_1.png)
 
 ## Notes
 While my current desktop machine is KDE Neon because I like to tinker and mess around/customize things, my end goal with this project is to create an install script that can take a standard Ubuntu install, and with very minimal effort, transform it into an environment that is comfortable for a macOS primary user. IT IS NOT MEANT TO BE AN EXACT CLONE. THINGS WILL BE DIFFERENT. I know that KDE/XFCE can give closer/better replicas. HOWEVER, from my testing, just plain/stock Ubuntu in Gnome seems to be the most stable/consistent, and that is why I chose to go with it for this project.
