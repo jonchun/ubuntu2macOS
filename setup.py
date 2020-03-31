@@ -24,19 +24,25 @@ def configure_logging():
     ch.setFormatter(console_formatter)
     logger.addHandler(ch)
 
-def enable_extension(extension_name):
+def gnome_extension(extension_name, command=''):
     try:
         cmd = subprocess.check_output(['which', 'gnome-extensions']).decode().strip()
-        subprocess.check_output([cmd, 'enable', extension_name])
+        subprocess.check_output([cmd, command, extension_name])
     except subprocess.CalledProcessError:
         try:
             cmd = subprocess.check_output(['which', 'gnome-shell-extension-tool']).decode().strip()
-            subprocess.check_output([cmd, '--enable', extension_name])
+            subprocess.check_output([cmd, '--{}'.format(command), extension_name])
         except subprocess.CalledProcessError:
             logger.error('Unable to find gnome extension tool... Skipping enabling %s', extension_name)
             return 1
-    logger.info('Enabled extension: `%s`', extension_name)
+    logger.info('Changed extension: `%s` | %s', extension_name, command)
     return 0
+
+def disable_gnome_extension(extension_name):
+    return gnome_extension(extension_name, 'disable')
+
+def enable_gnome_extension(extension_name):
+    return gnome_extension(extension_name, 'enable')
 
 def lsb_release():
         lsb_output = subprocess.check_output(['lsb_release', '-a'], stderr=subprocess.DEVNULL).decode()
@@ -192,7 +198,7 @@ def install(options):
         error_count += gsettings_set('org.gnome.desktop.interface', 'gtk-theme', 'Mc-OS-CTLina-Gnome-Dark-1.3')
 
     # Enable Shell Theme
-    error_count += enable_extension('user-theme@gnome-shell-extensions.gcampax.github.com')
+    error_count += enable_gnome_extension('user-theme@gnome-shell-extensions.gcampax.github.com')
     if options['theme_style'] == 'Light':
         error_count += gsettings_set('org.gnome.shell.extensions.user-theme', 'name', 'McOS-CTLina-Gnome-1.3')
     elif options['theme_style'] == 'Dark':
@@ -231,7 +237,9 @@ def install(options):
         error_count += gsettings_set('org.gnome.desktop.interface', 'icon-theme', icon_theme)
 
     # Dock
-    error_count += remove_packages(['gnome-shell-extension-ubuntu-dock'])
+    # error_count += remove_packages(['gnome-shell-extension-ubuntu-dock'])
+    error_count += disable_gnome_extension('ubuntu-dock@ubuntu.com')
+    error_count += disable_gnome_extension('dash-to-dock@micxgx.gmail.com')
     error_count += install_packages(['plank'])
     p = subprocess.Popen('killall plank > /dev/null 2>&1', shell=True)
     git_clone('https://github.com/kennyh0727/plank-themes.git', str(sources_dir))
