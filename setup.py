@@ -33,7 +33,7 @@ def gnome_extension(extension_name, command=''):
             cmd = subprocess.check_output(['which', 'gnome-shell-extension-tool']).decode().strip()
             subprocess.check_output([cmd, '--{}'.format(command), extension_name])
         except subprocess.CalledProcessError:
-            logger.error('Unable to find gnome extension tool... Skipping enabling %s', extension_name)
+            logger.error('Unable to %s with gnome extension tools... Skipping  %s', command, extension_name)
             return 1
     logger.info('Changed extension: `%s` | %s', extension_name, command)
     return 0
