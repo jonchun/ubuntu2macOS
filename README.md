@@ -1,3 +1,6 @@
+# WARNING
+This repo has been superseded by my [macify-linux](https://github.com/Jonchun/macify-linux) project. While I will still try and troubleshoot/maintain this as needed, my primary desktop environment is now KDE Neon rather than Ubuntu, so active progress on this repo is bound to be unlikely. This script is NOT well tested and does NOT have the greatest error logging and whatnot. I would recommend checking out the new repo if you are not married to the idea of Gnome (default Ubuntu)
+
 ## What is this?
 This is a script that you can run on your Ubuntu 18.04/20.04 install and it'll go through and apply themes/system settings, as well as replace your hotkeys to use cmd key bindings rather than ctrl key bindings thanks to the magic of [kinto.sh](http://kinto.sh).
 
